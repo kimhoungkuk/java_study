@@ -72,17 +72,18 @@ public class UseFor {
 		       }
 		 }
 	     
-		//8. 구구단 2~9단까지 추출
+		//8. 
 		// 0 0
 		// 1 0 1 1
 		// 2 0 2 1 2 2
 		// 3 0 3 1 3 2 3 3
-	     for(int i=1;  i<10; i++){
+/*	     for(int i=1;  i<10; i++){
 		       for( int j=2; j<10; j++) {
 		    	   System.out.println("구구단 출력 두번째 : " + j + " * " + i + " = " + j*i );
 		       }
 		 }
-		
+		*/
+	     
 		//for 무한 loop : 종료되지 않는 프로그램(서버, 시계)
 		for( int i =0;;i++) { // 수를 세지않는 무한 loop
 			System.out.println("무한");
