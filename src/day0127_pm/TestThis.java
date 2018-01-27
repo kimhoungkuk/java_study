@@ -3,7 +3,7 @@ package day0127_pm;
 /**
  * this method 형식<br>
  * 내 클래스의 다른 생성자 호출시 사용
- * @author sist06
+ * @author kimhk0
  *
  */
 public class TestThis {
@@ -27,6 +27,7 @@ public class TestThis {
 	}//useThis
 	
 	public static void main(String[] args) {
+		
 		//new TestThis(100); // 객체를 저장하지 않는 객체화
 		// 객체로 인스턴스변수나 ,method를 호출할 필요가 없을 때
 		TestThis tt = new TestThis(100); // 객체를 저장한 객체화
@@ -38,6 +39,9 @@ public class TestThis {
 		
 		tt.useThis(5); 
 		tt1.useThis(5);	
+		
+		//System.out.println(this); // static 영역에서는 어떤 객체가 호출하는지 알수 없기 때문에 this를 사용할 수 없다.
+		
 	}//main
 	
 }//class

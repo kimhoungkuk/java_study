@@ -22,9 +22,10 @@ public class Marker {
 	 */
 	public  Marker() {
 		//객체 생성될때 가져야 할 기본 값 설정
-		cap = 1;
+/*		cap = 1;
 		body = 1;
-		color = "검은";
+		color = "검은";*/
+		this(1,1,"검은");
 	}//Maker
 	
 	/**
