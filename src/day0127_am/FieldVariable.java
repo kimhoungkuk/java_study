@@ -36,6 +36,7 @@ public class FieldVariable {
 	
 	public void finalize() {
 		//객체(fv)가 GC에 의해 소멸되면 호출되는 메소드 
+		// Servlet / JSP (destroy / _jspDestroy )
 	}
 	
 } // class
