@@ -17,6 +17,31 @@ public class Marker {
 	private String color;
 	
 	/**
+	 *  Maker 기본 생성자<br>
+	 *  뚜껑 1개, 몸체 1개, 검은색인 마카펜 생성
+	 */
+	public  Marker() {
+		//객체 생성될때 가져야 할 기본 값 설정
+		cap = 1;
+		body = 1;
+		color = "검은";
+	}//Maker
+	
+	/**
+	 * Overload된 생성자<br>
+	 *  입력한 값으로 마카펜을 생성하는 생성자
+	 * @param cap - 뚜껑갯수
+	 * @param body - 몸체갯수
+	 * @param color - 마카펜의 색
+	 */
+	public  Marker(int cap, int body, String color) {
+		//객체 생성될때 가져야 할 기본 값을 외부에서 받아 설정
+		this.cap = cap;
+		this.body = body;
+		this.color = color;
+	}
+	
+	/**
 	 * 생성된 마카펜 객체의 뚜껑갯수 반환하는 일
 	 * @return 뚜껑수
 	 */

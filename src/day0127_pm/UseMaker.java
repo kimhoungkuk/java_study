@@ -18,23 +18,27 @@ public class UseMaker {
 	 * @param args Program Arguments - 실행시 입력하는 값
 	 */
 	public static void main(String[] args) {
+		
 		// 생성 : instance 변수가 초기화 : 기본형 정수형 = 0,
 		// 실수형 : 0.0 , 불린 : false, 문자형 : \u0000,
 		// 참조형 : class, String, Array : null 
 		Marker black /*객체:참조형데이터형*/ = new Marker();
+		Marker red = new Marker(3,3,"빨간");
 		System.out.println("heap의 주소 : "+black);
-		System.out.println(black.getCap() + " " + black.getBody() + " " + black.getColor());
-		
+		System.out.println("기본 생성자 사용 " + black.getCap() + " " + black.getBody() + " " + black.getColor());
+
 		// setter method 로 생성된 객체에 값 설정
-		black.setCap(1);
+/*		black.setCap(1);
 		black.setBody(1);
 		black.setColor("검은");
+		*/
 		
 		//getter method 로 생성된 객체에 설정된 값 얻기
-		System.out.println(black.getCap() + " " + black.getBody() + " " + black.getColor());		
+		System.out.println("Overload된 생성자 사용 " + red.getCap() + " " + red.getBody() + " " + red.getColor());		
 		
 		//동사적 특징 사용 (동작)
 		System.out.println(black.write("안녕하세요"));
+		System.out.println(red.write("안녕하세요"));
 		
 	} // main
 
